@@ -677,3 +677,19 @@ footer .wrap.bottom{display:flex;flex-wrap:wrap;justify-content:space-between;ga
 .field textarea#f-idea{resize:none;height:150px;min-height:0;overflow-y:auto}
 .char-count{justify-self:end;font-size:.75rem;letter-spacing:.06em;color:var(--ash);font-variant-numeric:tabular-nums}
 .char-count.near{color:var(--bone)}
+
+/* ===== Utilidades (antes eran estilos en línea en el HTML) ===== */
+.mt-intro{margin-top:clamp(40px,6vw,72px) !important}
+.pb-0{padding-bottom:0 !important}
+.tile-wide{grid-column:span 2 !important;aspect-ratio:4/5 !important}
+.pt-0{padding-top:0 !important}
+.stack{display:grid !important;gap:14px !important;min-width:0 !important}
+.text-ash{color:var(--ash) !important}
+.footer-tagline{color:var(--ash) !important;font-size:.88rem !important;max-width:34ch !important}
+.logo-72{width:72px !important}
+.self-start{justify-self:start !important}
+.mt-wall{margin-top:clamp(56px,7vw,88px) !important}
+.list-reset{list-style:none !important;margin:0 !important;padding:0 !important}
+.pt-contact{padding-top:clamp(56px,7vw,96px) !important}
+.offer-label{font-size:.66rem !important;letter-spacing:.24em !important;text-transform:uppercase !important;color:var(--ash) !important}
+.now-badge{margin-left:8px !important;letter-spacing:0 !important;text-transform:none !important;font-size:.8rem !important;color:var(--bone) !important;display:inline-flex !important;gap:6px !important;align-items:center !important}

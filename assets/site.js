@@ -155,6 +155,7 @@
       var b=document.createElement('button'); b.type='button'; b.dataset.style=s; b.innerHTML=SL(s)+'<span class="count">'+n+'</span>'; fil.appendChild(b);
     });
     window.setStyle=function(s,scroll){current=s; shown=PAGE; apply(); if(scroll) $('#portfolio-grid').scrollIntoView({behavior:'smooth'})};
+    document.querySelectorAll('[data-go-style]').forEach(function(b){b.addEventListener('click',function(){setStyle(b.dataset.goStyle,true)})});
     fil.addEventListener('click',function(e){var b=e.target.closest('button'); if(b) setStyle(b.dataset.style)});
     if(moreBtn) moreBtn.addEventListener('click',function(){shown+=PAGE; apply()});
     gal.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('piece')){e.preventDefault(); e.target.click()}});
