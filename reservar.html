@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reservar cita de tatuaje en Estepona · Ludus Kraken Tattoo</title>
+<meta name="description" content="Pide cita o presupuesto en Ludus Kraken Tattoo, Estepona. Te respondemos por WhatsApp con fechas y precio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=UnifrakturMaguntia&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Reservar cita de tatuaje en Estepona · Ludus Kraken Tattoo">
+<meta property="og:description" content="Pide cita o presupuesto en Ludus Kraken Tattoo, Estepona. Te respondemos por WhatsApp con fechas y precio.">
+<meta property="og:image" content="img/espalda-gladiador.jpg">
+<meta property="og:type" content="website">
+</head>
+<body data-page="reservar">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Ludus Kraken Tattoo, inicio">Ludus Kraken<small>TATTOO</small></a>
+    <ul id="menu">
+      <li><a href="index.html" data-p="inicio">Inicio</a></li>
+      <li><a href="portfolio.html" data-p="portfolio">Portfolio</a></li>
+      <li><a href="artistas.html" data-p="artistas">Equipo</a></li>
+      <li><a href="servicios.html" data-p="servicios">Servicios</a></li>
+      <li><a href="estudio.html" data-p="estudio">Estudio</a></li>
+    </ul>
+    <a class="lang" href="reservar-en.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+    <a href="reservar.html" class="btn btn-solid">Reservar cita</a>
+    <span class="progress" id="progress"></span>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="page-hero">
+  <span class="ghost" aria-hidden="true">Cita</span>
+  <div class="wrap">
+    <div class="ph-copy"><span class="crumbs"><a href="index.html">Inicio</a> / Reservar</span><h1>Reserva <em>tu cita</em></h1></div>
+    <div class="ph-side"><ol class="mini-steps" style="list-style:none;margin:0;padding:0"><li><b>i.</b>Rellena tu idea</li><li><b>ii.</b>Se abre WhatsApp con el mensaje listo</li><li><b>iii.</b>Te damos fecha y presupuesto</li></ol></div>
+  </div>
+</section>
+
+<section class="section contact" style="padding-top:clamp(56px,7vw,96px)">
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="form reveal" id="bookingForm" novalidate>
+        <div class="field">
+          <label for="f-name">Nombre</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="f-style">Estilo deseado</label>
+          <select id="f-style" name="style">
+            <option>Realismo</option><option>Tradicional / neotradicional</option><option>Geométrico / mandala</option><option>Fine line</option><option>Lettering</option><option>Color</option><option>Tapado o retoque</option><option>No lo tengo claro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-zone">Zona del cuerpo</label>
+          <input id="f-zone" name="zone" type="text" placeholder="Antebrazo, espalda, costillas…">
+        </div>
+        <div class="field">
+          <label for="f-when">Mejor horario</label>
+          <select id="f-when" name="when"><option>Me da igual</option><option>Mañanas (10:00–14:00)</option><option>Tardes (17:00–20:30)</option></select>
+        </div>
+        <div class="field full">
+          <label for="f-phone">Teléfono (opcional)</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="600 000 000">
+        </div>
+        <div class="field full">
+          <span class="lbl" id="size-lbl">Tamaño aproximado</span>
+          <div class="sizes" role="radiogroup" aria-labelledby="size-lbl">
+            <input type="radio" name="size" id="s1" value="Pequeño (menos de 5 cm)"><label for="s1">Pequeño · &lt;5 cm</label>
+            <input type="radio" name="size" id="s2" value="Mediano (5–15 cm)" checked><label for="s2">Mediano · 5–15 cm</label>
+            <input type="radio" name="size" id="s3" value="Grande (más de 15 cm)"><label for="s3">Grande · &gt;15 cm</label>
+            <input type="radio" name="size" id="s4" value="Manga o espalda completa"><label for="s4">Manga / espalda</label>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="f-idea">Tu idea</label>
+          <textarea id="f-idea" name="idea" maxlength="500" rows="5" aria-describedby="ideaCount" placeholder="Describe lo que tienes en mente, el significado o referencias que te gusten"></textarea>
+          <span class="char-count" id="ideaCount">0 / 500</span>
+        </div>
+        <div class="field full" id="refHint">
+          <span class="lbl">Fotos de referencia</span>
+          <label class="check" for="f-refs"><input type="checkbox" id="f-refs" name="refs" value="1"><span>Tengo fotos de referencia. Las mandaré en el chat de WhatsApp que se abre al enviar.</span></label>
+        </div>
+        <div class="field full" id="photoField" hidden>
+          <span class="lbl">Imagen de referencia</span>
+          <label class="drop" id="drop" for="f-file">
+            <input id="f-file" name="file" type="file" accept="image/*">
+            <span class="thumb" id="thumb"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5-5-9 8"/></svg></span>
+            <p id="dropText"><strong>Añade una imagen</strong> o arrástrala aquí. Va enlazada en tu mensaje.</p>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-solid">Enviar por WhatsApp <svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+          <a class="btn btn-ghost" id="mailBtn" href="mailto:?subject=Cita%20Ludus%20Kraken%20Tattoo">Prefiero email</a>
+        </div>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+      <div class="info reveal">
+        <div class="offer-card"><span class="lbl" style="font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ash)">Oferta hasta fin de año</span><span class="p">280 €</span><p>Sesión de unas cuatro horas para piezas grandes.</p></div>
+        <div class="info-block"><span class="lbl">Teléfono y WhatsApp</span><a href="tel:+34663782477">663 78 24 77</a><a class="sub-link" href="https://wa.me/34663782477" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
+        <div class="info-block"><span class="lbl">Horario <span class="now" data-now style="margin-left:8px;letter-spacing:0;text-transform:none;font-size:.8rem;color:var(--bone);display:inline-flex;gap:6px;align-items:center"></span></span><table class="hours"><tr><td>Lunes a viernes</td><td>10:00–14:00</td></tr><tr><td></td><td>17:00–20:30</td></tr><tr class="closed"><td>Sábado y domingo</td><td>Cerrado</td></tr></table></div>
+        <div class="socials"><a class="btn btn-ghost" href="https://www.instagram.com/luduskrakentattoo/" target="_blank" rel="noopener">Instagram</a><a class="btn btn-ghost" href="https://wa.me/34663782477" target="_blank" rel="noopener">WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="mapbox reveal" data-map>
+      <div class="map-fallback" aria-hidden="true">
+        <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+          <path class="sea" d="M0 430 C160 400 300 470 470 440 S720 400 800 420 V500 H0Z"/>
+          <path class="coast" d="M0 430 C160 400 300 470 470 440 S720 400 800 420"/>
+          <path class="road main" d="M-10 360 C200 330 420 380 820 300"/>
+          <path class="road main" d="M430 -10 C440 140 470 260 455 520"/>
+          <path class="road" d="M0 120 L800 160 M0 230 L800 250 M120 0 L170 500 M260 0 L300 500 M600 0 L560 500 M700 0 L690 500 M0 60 L380 90 M520 40 L800 70"/>
+          <path class="road" d="M330 120 L520 140 L510 260 L320 245 Z"/>
+          <text class="lbl" x="40" y="470">MAR MEDITERRÁNEO</text>
+          <text class="lbl" x="500" y="110">ESTEPONA</text>
+        </svg>
+        <span class="pin"></span>
+      </div>
+      <div class="map-card"><span>Ludus Kraken Tattoo</span><b>C. Miguel de María Luque, 6<br>29680 Estepona</b><a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&amp;query=Ludus+Kraken+Tattoo+C.+Miguel+de+Mar%C3%ADa+Luque+6+Estepona" target="_blank" rel="noopener" style="justify-self:start">Cómo llegar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M4 12L12 4M6 4h6v6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section seo-text" style="padding-top:0">
+  <div class="wrap">
+    <div class="prose reveal">
+      <span class="eyebrow">Cita en Estepona</span>
+      <h2>Cómo <em>pedir tu cita</em></h2>
+      <p>Para reservar en Ludus Kraken, nuestro estudio de tatuajes en Estepona, cuéntanos tu idea en el formulario: zona del cuerpo, tamaño aproximado y si tienes fotos de referencia. Al enviarlo se abre WhatsApp con el mensaje listo, adjuntas tus fotos en ese mismo chat y te respondemos con presupuesto cerrado y las fechas disponibles.</p>
+      <p>Trabajamos de lunes a viernes, de 10:00 a 14:00 y de 17:00 a 20:30, siempre con cita previa. Hacemos realismo, fine line, color, lettering, tapados y retoques, y la sesión de unas cuatro horas está a 280 € hasta fin de año. También puedes llamarnos al <a href="tel:+34663782477">663 78 24 77</a>. Atendemos a clientes de Estepona, Marbella, San Pedro, Manilva y Casares.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="f-brand"><a href="index.html" class="brand">Ludus Kraken<small>TATTOO</small></a><span style="color:var(--ash);font-size:.88rem;max-width:34ch">Estudio de tatuaje en Estepona. Diseño a medida, realismo, fine line y color.</span><img src="img/logo-sm.png" alt="Logotipo de Ludus Kraken Tattoo" width="72" height="68" loading="lazy" style="width:72px"></div>
+    <div class="f-col"><b>Páginas</b><a href="index.html">Inicio</a><a href="portfolio.html">Portfolio</a><a href="artistas.html">Equipo</a><a href="servicios.html">Servicios</a><a href="estudio.html">Estudio</a><a href="reservar.html">Reservar cita</a></div>
+    <div class="f-col"><b>Horario</b><span>Lunes a viernes</span><span>10:00–14:00</span><span>17:00–20:30</span><span>Sábado y domingo cerrado</span></div>
+    <div class="f-col"><b>Contacto</b><a href="https://www.google.com/maps/search/?api=1&amp;query=Ludus+Kraken+Tattoo+C.+Miguel+de+Mar%C3%ADa+Luque+6+Estepona" target="_blank" rel="noopener">C. Miguel de María Luque, 6<br>29680 Estepona, Málaga</a><a href="tel:+34663782477">Llamar · 663 78 24 77</a><a href="https://wa.me/34663782477" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/luduskrakentattoo/" target="_blank" rel="noopener">@luduskrakentattoo</a></div>
+  </div>
+  <div class="wrap bottom"><span>© 2026 Ludus Kraken Tattoo · Estepona</span><span>Diseño a medida · Cita previa</span></div>
+</footer>
+
+<nav class="mobile-bar" aria-label="Acciones rápidas"><a class="btn btn-ghost" href="https://wa.me/34663782477" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-solid" href="reservar.html">Reservar cita</a></nav>
+
+<aside aria-label="Contacto rápido por WhatsApp"><a class="wa-float" href="https://wa.me/34663782477" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.8-1.4a.5.5 0 000-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 11.9 11.9 0 004.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.3c0-.1-.2-.2-.4-.3z"/></svg></a></aside>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada" aria-hidden="true">
+  <div class="lb-bar"><span id="lbCount"></span><span class="lb-hint">Toca la imagen para ver el detalle</span><button class="lb-btn" id="lbClose" aria-label="Cerrar"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div>
+  <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
+  <div class="lb-bar"><span class="lb-cap" id="lbCap"></span><div class="lb-nav"><button class="lb-btn" id="lbPrev" aria-label="Anterior"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M10 2L4 8l6 6"/></svg></button><button class="lb-btn" id="lbNext" aria-label="Siguiente"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M6 2l6 6-6 6"/></svg></button></div></div>
+</div>
+
+<script src="assets/works.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
